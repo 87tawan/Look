@@ -412,8 +412,17 @@ const roupas = [
   },
 ];
 
+let previousIndex = -1;
+
 export async function GET(req, res) {
-  const randomIndex = Math.floor(Math.random() * roupas.length);
+  let randomIndex;
+
+  do {
+    randomIndex = Math.floor(Math.random() * roupas.length);
+  } while (randomIndex === previousIndex);
+
+  previousIndex = randomIndex;
+
   const randomObject = roupas[randomIndex];
   return new Response(JSON.stringify(randomObject));
 }
