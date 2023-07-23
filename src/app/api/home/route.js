@@ -56,7 +56,7 @@ const roupas = [
   {
     camisa: "camisa verde",
     calca: "calça preta",
-    tenis: "tenis branco",
+    tenis: "",
     chapeu: "chápeu panama",
   },
   {
@@ -315,12 +315,6 @@ const roupas = [
     camiseta: "camiseta estampada",
     calca: "calça legging",
     tenis: "tenis colorido",
-  },
-  {
-    camisa: "camisa azul",
-    calca: "calça preta",
-    tenis: "tenis branco",
-    chapeu: "chapéu de palha",
   },
   {
     blusa: "blusa de seda",
